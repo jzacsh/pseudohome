@@ -1,0 +1,9 @@
+= pseudohome
+
+some light-weight version of my dotfiles
+
+the idea is this is all hopefully light-weight enough to easily maintain in
+parallel to my real dotfiles. the main purpose is to be able to use outside of
+my own computers, eg: a shared OSX machine at a university. Since OSX has a shit
+version of bash, some "bash3" comments are made explaining workarounds that are
+encoded.
