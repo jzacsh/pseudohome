@@ -73,5 +73,5 @@ alias vi="vi -C "$PSEUDOHOME"/.vimrc"
 export PATH="$PSEUDOHOME"/bin:"$PATH"
 
 # so i can save proper git work without modifying shared-PC git configs
-alias gitmail='git format-patch -1 HEAD --stdout'
 alias pastie="curl -F 'clbin=<-' https://clbin.com"
+gitmail() ( git format-patch --root "${1:-HEAD}" --stdout; )
