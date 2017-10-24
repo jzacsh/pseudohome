@@ -69,7 +69,7 @@ baseFromTo() (
 
 # end partial-fork of ~/.bash_aliases ######################################
 
-alias vi="vi -C "$PSEUDOHOME"/.vimrc"
+alias vi="vi -u "$PSEUDOHOME"/.vimrc"
 export PATH="$PSEUDOHOME"/bin:"$PATH"
 
 # so i can save proper git work without modifying shared-PC git configs
