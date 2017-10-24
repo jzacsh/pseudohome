@@ -44,6 +44,7 @@ alias ca='clear; ls -laFH'
 alias cl='clear; ls -lFH'
 alias mi="curl -s http://checkip.dyndns.com | sed -e 's/^.*Address:\ //' -e 's/<\/body.*//'"
 alias json='python -mjson.tool'
+alias grep='grep --color=auto'
 # most commonly I'd like to convert: decimal <=> hex
 alias tohex="printf '0x%x\n'"
 alias fromhex="printf '%0.0f\n'"
