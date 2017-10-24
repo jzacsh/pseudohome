@@ -75,4 +75,8 @@ export PATH="$PSEUDOHOME"/bin:"$PATH"
 
 # so i can save proper git work without modifying shared-PC git configs
 alias pastie="curl -F 'clbin=<-' https://clbin.com"
-gitmail() ( git format-patch --root "${1:-HEAD}" --stdout; )
+gitmail() ( git format-patch --root "${1:-HEAD}" --stdout "$@"; )
+gitmailSince() (
+  # eg: `gitmailSince master...[UPSTREAM_REF]`
+  git format-patch --root HEAD --stdout "$@";
+)
